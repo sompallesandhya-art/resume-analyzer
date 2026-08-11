@@ -5,6 +5,7 @@ import { saveAs } from "file-saver";
 import { analyzeResume, matchResumeWithJD, rewriteResume, generateCoverLetter } from "../services/resumeService";
 import { useAuth } from "../context/AuthContext";
 import ThemeToggle from "../components/ThemeToggle";
+import FeedbackSection from "../components/FeedbackSection";
 
 function getScoreTheme(score) {
   if (score >= 80) {
@@ -1354,6 +1355,8 @@ function Dashboard() {
               </div>
             )}
           </div>
+
+          <FeedbackSection />
         </div>
       </main>
 
